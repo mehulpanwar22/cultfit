@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cult Fit</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* CSS RESET */
+        *{
+            margin: 0px;
+            padding: 0px;
+            
+            color: white;
+            font-family: 'Josefin Sans', sans-serif;
+            
+        }
+        body{
+            background: url('img/abs-g0d31baefc_1920.jpg') no-repeat;
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            left: 60px; 
+        }
+        .left img{    
+            width: 60px;
+        }
+        .left div{
+            
+            font-weight:light;
+            font-size: 22px;
+        }
+        .mid{
+            display: block;
+            width: 40%;
+            margin: 20px auto; 
+            /* border: 2px solid rgb(66, 218, 66); */
+        }
+        .right{
+            /* border: 2px solid rgb(31, 33, 150); */
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .navbar{
+            
+            display: inline-block;
+            padding: 5px 0px;
+        }
+        .navbar li{
+            
+            display: inline-block;
+            font-size: 22px;
+            font-weight:light;
+            
+        }
+        .navbar li a{  
+            text-decoration: none;
+            padding: 34px 23px; 
+        }
+        .navbar li a:hover, .navbar li a.hover{  
+            color: rgb(100, 99, 99);
+        }
+        .btn{
+            margin: 0px 6px;
+            background-color: transparent;
+            color: white;
+            padding: 10px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight:light;
+            font-family: 'Josefin Sans', sans-serif;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background: rgb(44, 44, 44);
+        }
+        .container{
+            /* border: 2px solid green; */
+            float: right;
+            margin: 120px 5px;
+            padding: 19px 5px;
+            width: 33%;
+            border-radius: 2px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .form-group input{
+            text-align: center; 
+            display: block;
+            width: 33%;
+            padding: 15px 60px;
+            margin: 20px auto;
+            border: 2px solid black;
+            color: black;
+            font-size: 20px;
+            
+        }
+        .container button{
+            display: block;
+            width: 23%;
+            margin: auto;
+        }
+        .container button:hover{
+            background: rgb(53, 53, 53);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left class for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Cult Fit</div>
+        </div>
+
+        <!-- Mid class for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="Active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right class for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join The Biggest Gym in India Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" id="name" placeholder="Enter your name">   
+            </div>         
+            <div class="form-group">
+                <input type="email" name="" id="" placeholder="mehul@gmail.com">   
+            </div>            
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your gender">   
+            </div>          
+            <div class="form-group">
+                <input type="number" name="" id="" placeholder="Enter your age">   
+            </div>           
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
